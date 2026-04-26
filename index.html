@@ -97,14 +97,13 @@
           <p class="section-description">On people who leave marks without meaning to.</p>
         </header>
         <div class="writing-grid" id="grid-muses">
-          <!-- Pieces loaded here — see js/content.js for how to add entries -->
-          <article class="writing-card" data-tags="prose,people" data-searchable>
-            <time class="card-date" datetime="2024-01-01">January 2024</time>
-            <h2 class="card-title"><a href="sections/muses-entry-01.html">The One Who Carried Paperbacks</a></h2>
-            <p class="card-excerpt">She always had a book tucked under one arm, spine cracked, pages soft from rereading…</p>
+          <article class="writing-card" data-tags="prose,people,family" data-searchable>
+            <time class="card-date" datetime="2025-10-05">October 2025</time>
+            <h2 class="card-title"><a href="sections/muses-entry-02.html">When the World Slept</a></h2>
+            <p class="card-excerpt">She was my சித்தி (Chitthi) - a word that describes "mother's sister" in a way that "aunt" never quite captures. She was a second maternal figure in my life, even during the times I didn't fully understand what that meant…</p>
+            <p class="card-search-text visually-hidden">When the World Slept. A tribute to Sivapriya Jayarajan. Cross-generational bond, birthday cards, kitchen conversations, Tamil and Malayalam. She was the first family member I got to know as a person, not just a relative. Her warmth, storytelling, and kindness touched everyone she knew.</p>
             <span class="card-tag">prose</span>
           </article>
-          <!-- Add more writing-card articles here -->
         </div>
       </div>
     </section>
@@ -262,8 +261,9 @@
           <label for="archive-filter-year">Year</label>
           <select id="archive-filter-year" aria-label="Filter by year">
             <option value="">All years</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
             <option value="2024">2024</option>
-            <option value="2023">2023</option>
           </select>
           <label for="archive-filter-type">Type</label>
           <select id="archive-filter-type" aria-label="Filter by type">
@@ -275,15 +275,20 @@
         </div>
         <ol class="archive-list" id="archive-list" reversed>
           <!-- Dynamically populated by js/archives.js, or add manually -->
-          <li class="archive-entry" data-year="2024" data-type="prose">
-            <time datetime="2024-02-01">Feb 2024</time>
-            <a href="sections/joy-entry-01.html">On the Smell of Rain Before It Arrives</a>
+          <li class="archive-entry" data-year="2026" data-type="prose">
+            <time datetime="2026-02-01">Feb 2026</time>
+            <a href="sections/joy-entry-02.html">When the January Sun Seeps Through</a>
             <span class="archive-section">For What Joy</span>
           </li>
-          <li class="archive-entry" data-year="2024" data-type="prose">
-            <time datetime="2024-01-01">Jan 2024</time>
-            <a href="sections/muses-entry-01.html">The One Who Carried Paperbacks</a>
+          <li class="archive-entry" data-year="2025" data-type="prose">
+            <time datetime="2025-10-05">Oct 2025</time>
+            <a href="sections/muses-entry-02.html">When the World Slept</a>
             <span class="archive-section">Some Become Muses</span>
+          </li>
+          <li class="archive-entry" data-year="2024" data-type="poetry">
+            <time datetime="2024-03-01">Mar 2024</time>
+            <a href="sections/silhouette-entry-01.html">Against the Window Light</a>
+            <span class="archive-section">Silhouette</span>
           </li>
         </ol>
       </div>
