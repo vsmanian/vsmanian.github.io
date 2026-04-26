@@ -373,9 +373,15 @@ ul, ol { list-style: none; }
   margin-bottom: var(--space-sm);
   overflow: hidden;
 }
-.photo-link { display: block; }
+.photo-link {
+  display: block;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
 .photo-link img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: opacity var(--transition), transform 0.5s ease;
   filter: grayscale(15%);
 }
@@ -391,14 +397,16 @@ ul, ol { list-style: none; }
   inset: 0;
   background: rgba(28,26,23,0.96);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: var(--space-lg) 0;
   z-index: 9000;
 }
 .lightbox[hidden] { display: none; }
 #lightbox-img {
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 80vh;
   object-fit: contain;
 }
 .lightbox-close {
@@ -432,6 +440,19 @@ ul, ol { list-style: none; }
 .lightbox-next { right: var(--space-md); }
 .lightbox-prev:hover,
 .lightbox-next:hover { opacity: 1; }
+
+.photo-caption { display: none; }
+
+.lightbox-caption {
+  width: min(85vw, 720px);
+  margin-top: var(--space-md);
+  color: var(--cream);
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: center;
+  opacity: 0.92;
+}
 
 /* --- Archives -------------------------------------------- */
 .archive-controls {

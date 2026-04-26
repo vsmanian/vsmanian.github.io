@@ -151,29 +151,100 @@
       <div class="section-inner">
         <header class="section-header">
           <h1 id="h-untitled">Untitled</h1>
-          <p class="section-description">Photographs without captions. Let them speak first.</p>
+          <p class="section-description">The world as I see it</p>
         </header>
         <div class="photo-grid" id="grid-photos" role="list">
-          <!-- Photo items — duplicate this block for each photo -->
+          <!-- Photo items -->
           <figure class="photo-item" role="listitem" data-searchable data-tags="photo">
-            <a href="photos/photo-01.jpg" class="photo-link" aria-label="Photo 1 — open full size">
+            <a href="photos/1.jpg" class="photo-link" aria-label="Photo 1 — open full size">
               <img
-                src="photos/thumbnails/photo-01.jpg"
-                alt="[Describe the photo here for accessibility and SEO]"
+                src="photos/thumbnails/1.jpg"
+                alt="Icarus caged"
                 loading="lazy"
                 width="600"
                 height="400"
               />
             </a>
-            <!-- Optional quiet caption, hidden by default -->
-            <figcaption class="photo-caption visually-hidden">Optional note about this photo.</figcaption>
+            <figcaption class="photo-caption">Icarus caged</figcaption>
           </figure>
-          <!-- Add more photo-item figures here -->
+          <figure class="photo-item" role="listitem" data-searchable data-tags="photo">
+            <a href="photos/2.jpg" class="photo-link" aria-label="Photo 2 — open full size">
+              <img
+                src="photos/thumbnails/2.jpg"
+                alt="'Freedom is not free' and a flag that looks torn"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+            <figcaption class="photo-caption">'Freedom is not free' and a flag that looks torn</figcaption>
+          </figure>
+          <figure class="photo-item" role="listitem" data-searchable data-tags="photo">
+            <a href="photos/3.jpg" class="photo-link" aria-label="Photo 3 — open full size">
+              <img
+                src="photos/thumbnails/3.jpg"
+                alt="Reconciliation"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+            <figcaption class="photo-caption">Reconciliation</figcaption>
+          </figure>
+          <figure class="photo-item" role="listitem" data-searchable data-tags="photo">
+            <a href="photos/4.jpg" class="photo-link" aria-label="Photo 4 — open full size">
+              <img
+                src="photos/thumbnails/4.jpg"
+                alt="Brutal and alive"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+            <figcaption class="photo-caption">Brutal and alive</figcaption>
+          </figure>
+          <figure class="photo-item" role="listitem" data-searchable data-tags="photo">
+            <a href="photos/5.jpg" class="photo-link" aria-label="Photo 5 — open full size">
+              <img
+                src="photos/thumbnails/5.jpg"
+                alt="When you settle for adulthood"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+            <figcaption class="photo-caption">When you settle for adulthood</figcaption>
+          </figure>
+          <figure class="photo-item" role="listitem" data-searchable data-tags="photo">
+            <a href="photos/6.jpg" class="photo-link" aria-label="Photo 6 — open full size">
+              <img
+                src="photos/thumbnails/6.jpg"
+                alt="Dusk at Harvard"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+            <figcaption class="photo-caption">Dusk at Harvard</figcaption>
+          </figure>
+          <figure class="photo-item" role="listitem" data-searchable data-tags="photo">
+            <a href="photos/7.jpg" class="photo-link" aria-label="Photo 7 — open full size">
+              <img
+                src="photos/thumbnails/7.jpg"
+                alt="Untitled photograph 7"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+            <figcaption class="photo-caption">Untitled photograph 7</figcaption>
+          </figure>
         </div>
         <!-- Lightbox overlay -->
         <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
           <button class="lightbox-close" aria-label="Close photo viewer">&#x2715;</button>
           <img id="lightbox-img" src="" alt="" />
+          <p id="lightbox-caption" class="lightbox-caption" aria-live="polite"></p>
           <button class="lightbox-prev" aria-label="Previous photo">&#x2039;</button>
           <button class="lightbox-next" aria-label="Next photo">&#x203a;</button>
         </div>

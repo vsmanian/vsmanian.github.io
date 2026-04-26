@@ -8,6 +8,7 @@
   const nextBtn  = document.querySelector('.lightbox-next');
   if (!lightbox) return;
 
+  const captionEl = document.getElementById('lightbox-caption');
   const photos = Array.from(document.querySelectorAll('.photo-link'));
   let current  = 0;
 
@@ -15,8 +16,10 @@
     current = idx;
     const link  = photos[current];
     const img   = link.querySelector('img');
+    const caption = link.closest('figure')?.querySelector('figcaption')?.textContent?.trim() || '';
     lbImg.src   = link.href;
     lbImg.alt   = img?.alt || '';
+    captionEl.textContent = caption;
     lightbox.hidden = false;
     document.body.style.overflow = 'hidden';
     closeBtn.focus();
