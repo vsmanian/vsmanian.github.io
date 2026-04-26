@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sitemap.xml — update URLs and dates as you add content -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://vsmanian.github.io/</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Add one <url> block per writing piece and photo page -->
+  <url>
+    <loc>https://vsmanian.github.io/sections/muses-entry-01.html</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

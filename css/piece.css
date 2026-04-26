@@ -1,0 +1,80 @@
+/* piece.css — individual writing pages */
+
+.piece-main {
+  max-width: var(--narrow-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.piece-header {
+  margin-bottom: var(--space-lg);
+  text-align: left;
+}
+.piece-section {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 200;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-xs);
+}
+.piece-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: var(--space-xs);
+}
+.piece-date {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 200;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+}
+
+.piece-body {
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: var(--ink-mid);
+}
+.piece-body p { margin-bottom: 1.5em; }
+.piece-body em { color: var(--ink); }
+.piece-body blockquote {
+  border-left: 2px solid var(--gold);
+  padding-left: var(--space-md);
+  margin: var(--space-md) 0;
+  font-style: italic;
+  color: var(--ink-mid);
+  line-height: 2;
+}
+
+.piece-footer {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--cream-dark);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.piece-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.piece-nav a,
+.piece-back {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 200;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink-light);
+  transition: color var(--transition);
+}
+.piece-nav a:hover,
+.piece-back:hover { color: var(--gold); }
