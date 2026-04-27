@@ -502,6 +502,7 @@ ul, ol { list-style: none; }
   text-transform: uppercase;
   color: var(--ink-light);
 }
+.archive-entry[hidden] { display: none; }
 .archive-entry a { text-decoration: none; }
 .archive-entry a:hover { color: var(--gold); text-decoration: underline; }
 .archive-section {
