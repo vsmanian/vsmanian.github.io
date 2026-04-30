@@ -37,6 +37,7 @@ navLinks.forEach(link => {
     e.preventDefault();
     showSection(link.dataset.section);
     nav?.classList.remove('open');
+    toggle?.classList.remove('is-open');
     toggle?.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   });
@@ -48,6 +49,7 @@ siteTitle?.addEventListener('click', e => {
   e.preventDefault();
   showSection('home');
   nav?.classList.remove('open');
+  toggle?.classList.remove('is-open');
   toggle?.setAttribute('aria-expanded', 'false');
   document.body.style.overflow = '';
 });

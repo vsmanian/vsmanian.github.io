@@ -556,6 +556,7 @@ ul, ol { list-style: none; }
   text-transform: uppercase;
   color: var(--ink-light);
   text-decoration: none;
+  padding: clamp(0.75rem, 2vw, 1.25rem) clamp(1.25rem, 4vw, 2rem);
   margin-bottom: var(--space-lg);
   transition: color var(--transition);
 }
