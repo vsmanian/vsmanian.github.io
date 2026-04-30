@@ -609,6 +609,12 @@ ul, ol { list-style: none; }
   color: var(--ink-mid);
 }
 
+.entry-content .section-break {
+  text-align: center;
+  color: var(--ink-light);
+  margin: var(--space-xs) 0;
+}
+
 /* --- Footer ---------------------------------------------- */
 .site-footer {
   padding: var(--space-md);
