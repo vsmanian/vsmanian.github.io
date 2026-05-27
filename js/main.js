@@ -43,6 +43,14 @@ navLinks.forEach(link => {
   });
 });
 
+// Footer section links (e.g. Archives) — same behaviour as nav links without the nav-link styles
+document.querySelectorAll('.site-footer a[data-section]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    showSection(link.dataset.section);
+  });
+});
+
 // Site title link (logo) — go to home
 const siteTitle = document.querySelector('.site-title');
 siteTitle?.addEventListener('click', e => {
