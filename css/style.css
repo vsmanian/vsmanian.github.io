@@ -601,6 +601,37 @@ ul, ol { list-style: none; }
   margin: var(--space-xs) 0;
 }
 
+.entry-figure {
+  margin: var(--space-lg) 0;
+}
+
+.entry-figure img {
+  width: 100%;
+  height: auto;
+}
+
+.entry-figure__protect {
+  position: relative;
+  user-select: none;
+}
+
+.entry-figure__protect::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.entry-figure figcaption {
+  margin-top: var(--space-xs);
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 200;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  text-align: center;
+}
+
 /* --- Footer ---------------------------------------------- */
 .site-footer {
   padding: var(--space-md);
