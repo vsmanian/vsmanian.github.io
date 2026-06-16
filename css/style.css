@@ -319,15 +319,6 @@ ul, ol { list-style: none; }
   line-height: 1.65;
   margin-bottom: var(--space-xs);
 }
-.card-tag {
-  font-family: var(--font-ui);
-  font-size: 0.6rem;
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gold);
-}
-
 /* Poem variant */
 .writing-card--poem .card-excerpt {
   font-style: italic;
@@ -345,7 +336,6 @@ ul, ol { list-style: none; }
 .section--dark .card-excerpt { color: var(--cream-dark); }
 .section--dark .card-title a { color: var(--cream); }
 .section--dark .card-date { color: var(--ink-light); }
-.section--dark .card-tag { color: var(--gold-light); }
 .section--dark .photo-link img { filter: grayscale(15%) brightness(0.95); }
 .section--dark .photo-link:hover img { filter: grayscale(0%) brightness(1.05); }
 
