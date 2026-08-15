@@ -43,7 +43,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 img { display: block; max-width: 100%; }
-a { color: inherit; text-decoration-color: var(--gold); }
+a { color: inherit; text-decoration-color: var(--ink); }
 a:hover { color: var(--gold); }
 ul, ol { list-style: none; }
 
